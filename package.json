@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/nchistyakov/notable.sample#readme",
     "dependencies": {
+        "body-parser": "*",
         "express": "^4.14.1",
         "mongodb": "^2.2.24"
     }
