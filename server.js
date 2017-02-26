@@ -1,4 +1,8 @@
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 const app = express();
-///111 1234
+
+const port = 8000;
+app.listen(port, () => {
+    console.log('We are live on ' + port);
+});
