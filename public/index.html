@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Hrllo world!</h1>
+    <script type="text/javascript">
+        var request = new XMLHttpRequest();
+        request.open("GET", "/notes/58b30307fd26568ec4782e36", true);
+        request.onload = function() {
+            //  alert(x.responseText);
+            document.getElementById("result").innerText = request.responseText;
+        }
+        request.send(null);
+    </script>
+
+    <p>
+        <span>Result:</span>
+        <span id="result"></span>
+    </p>
+</body>
+
+</html>

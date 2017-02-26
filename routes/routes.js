@@ -1,10 +1,13 @@
-module.exports = function(app, database) {
-    'use strict';
+module.exports = function(app, database, publicDir) {
+    // 'use strict';
     require('../extensions/dateformat');
+    var path = require('path');
     var ObjectID = require('mongodb').ObjectID;
 
     app.get('/', function(req, res) {
-        res.send('hello world');
+        // res.sendFile(path.join(__dirname + '/index.html'));
+        // res.sendFile('index.html');
+        res.sendFile('index.html', { root: publicDir });
     });
 
     app.use('/timeLog', function timeLog(req, res, next) {
