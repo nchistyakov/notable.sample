@@ -1,3 +1,4 @@
+node_modules
 /node_modules/*/node-modules/
 node_modules/**/*.node
 node_modules/**/*.o
